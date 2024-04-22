@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div{
+  background-color: red;
+  width: 150px;
+  height: 150px;
+  margin:auto;
+}
+p{
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+  margin: 30px;
+}
+span{
+  background-color: green;
+  margin-left: 30px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: lightblue;
+      animation: dark 6s ease infinite alternate;
+      
+    }
+    div{
+      background-color: yellow;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      /* animation-fill-mode: both; */
+      animation: sunset 6s ease alternate infinite;
+      
+    }
+    @keyframes sunset{
+      0%{
+        transform: translateY(150vh);
+        background-color: rgb(255, 85, 0);
+      }
+      100%{
+        transform: translateY(0);
+      }
+    }
+    @keyframes dark{
+      0%{
+        background-color: black;
+      }
+      100%{
+        background-color: lightblue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Or use AOS website for animation -->
+  <div>
+
+  </div>
+</body>
+</html>

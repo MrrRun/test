@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+nav {
+  list-style-type: none;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+}
+
+header {
+  padding: 7px;
+  background-color: #066ac9;
+  color: white;
+}
+
+
+.title {
+  padding-top: 20px;
+}
+
+.title h1{
+  color: darkblue;
+}
+
+.title h1,p {
+  text-align: center;
+}
+
+.tap {
+  display: flex;
+  background-color: rgb(153, 192, 203);
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1135px;
+  margin: auto;
+  height: 58px;
+  color: #066ac9;
+  border-radius: 10px;
+  /* opacity: 20.0%; */
+  box-shadow: rgba(29, 58, 83, 0.15) 0px 0px 40px 0px;
+}
+
+.tap p {
+  width: 140px;
+  font-size: 15px;
+  padding: 10px;
+  transition: 0.3s;
+
+}
+
+.tap p:hover {
+  color: rgb(203, 193, 193);
+  background-color: #066ac9;
+  border-radius: 5px;
+  width: 140px;
+  font-size: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.tapSection {
+  padding-top: 20px;
+}
+
+.card {
+  /* width: 100%; */
+  /* height: 443px; */
+  margin-top: 30px;
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.card .cardContainer {
+  background-color: #fff;
+  height: 443px;
+  width: 258px;
+  box-shadow: rgba(29, 58, 83, 0.15) 0px 0px 40px 0px;
+  border-radius: 8px;
+}
+
+.cardContainer .cardPic {
+  width: 258px;
+  height: 192px;
+  transition: 0.3s;
+  /* background-color: darkgreen; */
+}
+.cardContainer:hover{
+  transform: scale(1.02);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.cardPic img {
+  width: 100%;
+  height: 100%;
+  border-radius:8px 8px 0px 0px;
+}
+
+.titleCourse{
+  padding: 10px 20px;
+}
+
+.titleCourse .level{
+  display: flex;
+  justify-content: space-between;
+}
+.heart{
+  color: red;
+}
+
+.level p{
+  background-color: #6e42c123;
+  color: #6f42c1;
+  padding: 0px 7px;
+  border-radius: 5.2px;
+}
+
+.titleCourse .big-title{
+  margin-top: 7px;
+}
+
+.big-title span{
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  line-height: 26.25px;
+}
+
+.titleCourse .des{
+  margin-top: 5px;
+  font-size: 15px;
+  opacity: 0.7;
+  line-height: 22.5px;
+}
+
+.star .fa-star{
+  color: #f7c32e;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.star span{
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+hr{
+  margin-top: 15px;
+  opacity: 0.3;
+}
+
+.clock-box{
+  width: 100%;
+  height: 30px;
+  /* background-color: chocolate; */
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.clock-box {
+  font-size: 15px;
+}
+
+.fa-clock{
+  color: #d6293e;
+  margin-right: 5px;
+}
+
+.fa-table{
+  margin-right: 5px;
+  color: #fd7e14;
+}
+
+footer{
+  height: 50px;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 50px;
+}

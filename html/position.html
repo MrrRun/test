@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      height: 300vh;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .nav{
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: sticky;
+      width: 100%;
+      top: 0;
+    }
+    .container{
+      height: 900px;
+      width: 100%;
+      background-color: grey;
+      position: relative;
+      z-index: -2;
+
+      & .fixed img{
+        width: 200px;
+        height: 300px;
+        position: fixed;
+        margin-top: 80px;
+        padding-left: 50px;
+      }
+
+      & .relative{
+        margin-top: 20px;
+        width: 400px;
+        height: 400px;
+        background-color: cadetblue;
+        position: absolute;
+        z-index: -1;
+        right: 30px;
+        
+
+        & .img1{
+          width: 200px;
+          position: relative;
+          top: 30px;
+          left: 15px;
+          z-index: -1;
+          
+        }
+        & .img2{
+          width: 100px;
+          height: 150px;
+          position: absolute;
+          top: 150px;
+          left: 75px;
+          z-index: 1;
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="nav">This is nav bar</div>
+      <div class="fixed">
+        <img src="../images/astronaut.jpg" alt="astronaut">
+      </div>
+      <div class="relative">
+        <img class="img1" src="../images/puppy.jpg" alt="puppy">
+        <img class="img2" src="../images/Neon vibe girl.jpg" alt="cat">
+      </div>
+    </div>
+  </main>
+</body>
+</html>

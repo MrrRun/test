@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+    }
+    /* button{
+      border: 1px solid purple;
+      background-color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: all 0.5s;
+    }
+    button:hover{
+      transform: scale(1.5);
+      background-color: purple;
+      color: white;
+    } */
+    h3{
+      /* animation-name: slideIn;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0;
+      animation-iteration-count: 3; */
+      animation: slideIn 3s ease-in-out infinite ;
+    }
+    h4{
+      animation: rotate 5s infinite linear;
+    }
+    h5{
+      animation: bounce 2s infinite;
+    }
+    @keyframes slideIn{
+      from{
+        width: 300%;
+        margin-left: 100%;
+      }
+      to{
+        margin-left: 0;
+      }
+    }
+    @keyframes rotate{
+      from{
+        transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes bounce{
+      0%{
+        transform: translateY(-60px);
+      }
+      20%, 60%, 100%{
+        transform: translateY(0);
+      }
+      40%{
+        transform: translateY(-30px);
+      }
+      80%{
+        transform: translateY(-15px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- <button>Click me!</button> -->
+  <h3>This is slide in</h3>
+  <h4>Rotating text</h4><br><br>
+  <h5>Animation bounce</h5>
+</body>
+</html>
